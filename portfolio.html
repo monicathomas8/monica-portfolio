@@ -1,94 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Monica Thomas | Web Developer</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a href="https://calendly.com/monicaswebdeveloper/30min" target="_blank" rel="noopener noreferrer"
-                    class="nav-link d-lg-none">
-                    Book a Free Call
-                </a>
-                <a href="https://calendly.com/monicaswebdeveloper/30min" target="_blank" rel="noopener noreferrer"
-                    class="btn btn-dark d-none d-lg-inline-block ms-lg-3">
-                    Book a Free Call
-                </a>
-            </li>
+  <title>Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Monica Thomas | Web Developer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+            <a href="https://calendly.com/monicaswebdeveloper/30min" target="_blank" rel="noopener noreferrer"
+              class="nav-link d-lg-none">
+              Book a Free Call
+            </a>
+            <a href="https://calendly.com/monicaswebdeveloper/30min" target="_blank" rel="noopener noreferrer"
+              class="btn btn-dark d-none d-lg-inline-block ms-lg-3">
+              Book a Free Call
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- HERO SECTION -->
-    <section class="bg-light text-center py-5">
-      <div class="container">
-        <h1 class="display-4">Monica Thomas</h1>
-        <p class="lead">
-          Full stack web developer with a focus on custom-built sites. Let's
-          build something great together.
-        </p>
-        <a href="#about" class="btn btn-dark mt-3">About Me</a>
-      </div>
-    </section>
+ 
 
-   
-    
-       
+        <section class="py-5 bg-light">
+          <div class="container">
+            <h2 class="text-center mb-5">Recent Work</h2>
+            <div class="row g-4">
 
-        
+              <!-- Project 1 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="/assets/images/maryplaster.png" class="card-img-top" alt="Custom Shopify Store preview">
+                  <div class="card-body">
+                    <h5 class="card-title">Custom Shopify Store</h5>
+                    <p class="card-text">A fully branded e-commerce site with product setup, payment integration, and a
+                      sleek mobile design.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="https://87gj18-kc.myshopify.com/" class="btn btn-outline-dark btn-sm" target="_blank">View
+                      Project</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
 
-       
+              <!-- Project 2 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="/assets/images/theep.png" class="card-img-top" alt="The Explorer's Post preview">
+                  <div class="card-body">
+                    <h5 class="card-title">The Explorer’s Post</h5>
+                    <p class="card-text">A travel blog showcasing iconic destinations around the world,
+                      built with custom styling, mobile-first design,
+                      and secure user accounts with post editing capabilities.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="https://the-ep-9aae432261ad.herokuapp.com/" class="btn btn-outline-dark btn-sm"
+                          target="_blank">View Project</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center py-4">
-      <div class="container">
-        <p class="mb-1">&copy; 2025 Monica Thomas. All rights reserved.</p>
-        <p class="mb-0">
-          Built with 💻 by
-          <a href="#" class="text-white text-decoration-underline"
-            >Monica Thomas</a
-          >
-        </p>
-      </div>
-    </footer>
+              <!-- Project 3 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="/assets/images/meditioncpng" class="card-img-top" alt="Meditation preview">
+                  <div class="card-body">
+                    <h5 class="card-title">Meditation Corner</h5>
+                    <p class="card-text">
+                      A peaceful website designed to teach the basics of meditation and help users track their practice.
+                      It features a simple, distraction-free layout, breathing guidance,
+                      and a functional session counter.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="https://monicathomas8.github.io/Monicas-Meditation-Space/"
+                          class="btn btn-outline-dark btn-sm" target="_blank">View Project</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
 
-    <!-- Bootstrap JS (optional, only if you're using dropdowns, modals, etc.) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+              <!-- Project 4 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="/assets/images/allscreens.png" class="card-img-top" alt="DreamScapes preview">
+                  <div class="card-body">
+                    <h5 class="card-title">DreamScapes Art Shop</h5>
+                    <p class="card-text">A clean, minimalist e-commerce store for a fictional artist, featuring custom
+                      order forms and Stripe integration.</p>
+                      <div class="d-flex justify-content-center">
+                    <a href="https://dreamscapes-4bf65f774d22.herokuapp.com/" class="btn btn-outline-dark btn-sm" target="_blank">View Project</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="bg-dark text-white text-center py-4">
+          <div class="container">
+            <p class="mb-1">&copy; 2025 Monica Thomas. All rights reserved.</p>
+            <p class="mb-0">
+              Built with 💻 by
+              <a href="#" class="text-white text-decoration-underline">Monica Thomas</a>
+            </p>
+          </div>
+        </footer>
+
+        <!-- Bootstrap JS (optional, only if you're using dropdowns, modals, etc.) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
+
 </html>
