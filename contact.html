@@ -11,7 +11,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css"/>
-  
   </head>
   <body>
     <!-- NAVIGATION -->
@@ -56,18 +55,37 @@
       </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section class="py-5 bg-light text-center">
-  <div class="container">
-    <h2 class="mb-4">Get in Touch</h2>
-    <p class="lead">Have a project in mind? Reach out anytime at:</p>
-    <p class="fw-bold">
-      <a href="mailto:monicaswebdeveloper@gmail.com" class="text-dark text-decoration-none">
-        monicaswebdeveloper@gmail.com
-      </a>
-    </p>
-  </div>
-</section>
+
+      <section class="py-5 bg-light text-center lead">
+        <div class="container">
+          <h2 class="mb-4">Get in Touch</h2>
+          <p>Got a project in mind or a question to ask? </p>
+            <p>I'd love to hear from you. You can get in touch by 
+            email or simply fill out the contact form below.</p>
+            <p class="fw-bold">
+            <a href="mailto:monicaswebdeveloper@gmail.com" class="text-dark text-decoration-none">
+              monicaswebdeveloper@gmail.com
+            </a>
+          </p>
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input name="name" type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input name="email" type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea name="message" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Send Message</button>
+          </form>
+        </div>
+      </section>
+
 
 
     <!-- FOOTER -->
