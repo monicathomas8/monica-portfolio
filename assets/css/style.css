@@ -1,4 +1,5 @@
 
 h1 {
-  font-size: 2em; /* or any other size you prefer */
+  font-size: 2em !important;
 }
+
