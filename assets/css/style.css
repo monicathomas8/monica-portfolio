@@ -2,3 +2,29 @@ h1 {
   font-size: 2em !important;
 }
 
+.bubble-title {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Prevents bubble from squishing */
+}
+
+
+@media (min-width: 768px) {
+  .bubble-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
