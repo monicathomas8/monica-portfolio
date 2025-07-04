@@ -1,13 +1,38 @@
-h1 {
-  font-size: 2em !important;
+.bg-sage {
+  background-color: #e6f2e6;
+  color: #000;
 }
+
+.btn-sage {
+  background-color: #a3c4a3;
+  color: black;
+  border: none;
+}
+
+.btn-sage:hover {
+  background-color: #8db88d;
+  color: black;
+}
+
+.btn-outline-sage {
+  color: #000;
+  border: 2px solid #a3c4a3;
+  background-color: transparent;
+}
+
+.btn-outline-sage:hover {
+  background-color: #a3c4a3;
+  color: black;
+}
+
 
 .bubble-title {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: #000;
-  color: #fff;
+  background-color: #a3c4a3;
+  color: #000;
+;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,6 +43,12 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex-shrink: 0; /* Prevents bubble from squishing */
 }
+
+.bg-footer-sage {
+  background-color: #a3c4a3; /* Matches button color */
+  color: #000;
+}
+
 
 
 @media (min-width: 768px) {
