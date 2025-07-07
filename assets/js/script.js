@@ -40,3 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const flipCards = document.querySelectorAll(".flip-card");
+
+  flipCards.forEach(card => {
+    card.addEventListener("click", function () {
+      // Toggle a class that triggers the flip on touch/click
+      this.querySelector(".flip-inner").classList.toggle("flipped");
+    });
+  });
+});

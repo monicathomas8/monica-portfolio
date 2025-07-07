@@ -186,8 +186,23 @@ body, h1, h2, h3, h4, h5, h6, p {
   text-align: center;
 }
 
+.flip-inner {
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
 
 /* Responsive Design */
+/* Flip when hovered on desktop */
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* Flip when class is toggled (for mobile) */
+.flip-inner.flipped {
+  transform: rotateY(180deg);
+}
 
 @media (min-width: 768px) {
   .bubble-wrapper {
