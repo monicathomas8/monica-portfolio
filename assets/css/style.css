@@ -139,6 +139,9 @@ body, h1, h2, h3, h4, h5, h6, p {
   width: 200px;
   height: 260px;
   perspective: 1000px;
+   cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
 }
 
 .flip-inner {

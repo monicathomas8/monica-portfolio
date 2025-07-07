@@ -1,16 +1,18 @@
+// Wait for the full DOM to load before attaching any event listeners
 document.addEventListener("DOMContentLoaded", function () {
+  // ===== BACK TO TOP BUTTON =====
   const backToTopBtn = document.getElementById("backToTopBtn");
 
+  // Show/hide the "Back to Top" button based on scroll position
   window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
-      backToTopBtn.style.display = "block";
+      backToTopBtn.style.display = "block"; // Show button when scrolled down more than 300px
     } else {
-      backToTopBtn.style.display = "none";
+      backToTopBtn.style.display = "none"; // Hide button when scrolled up
     }
   });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+  // ===== TOGGLE BUTTON TEXT (Care Plans & Add-Ons) =====
   const careToggleBtn = document.getElementById("careToggleBtn");
   const collapseCare = document.getElementById("mounthlyCareCollapse");
 
@@ -19,10 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Care plans toggle
   if (careToggleBtn && collapseCare) {
+    // When care plans section is expanded
     collapseCare.addEventListener("shown.bs.collapse", () => {
       careToggleBtn.textContent = "Hide Monthly Website Care Plans";
     });
 
+    // When care plans section is collapsed
     collapseCare.addEventListener("hidden.bs.collapse", () => {
       careToggleBtn.textContent = "View Monthly Website Care Plans";
     });
@@ -30,17 +34,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Add-ons toggle
   if (addonToggleBtn && collapseAddon) {
+    // When add-ons section is expanded
     collapseAddon.addEventListener("shown.bs.collapse", () => {
       addonToggleBtn.textContent = "Hide Add-Ons";
     });
 
+    // When add-ons section is collapsed
     collapseAddon.addEventListener("hidden.bs.collapse", () => {
       addonToggleBtn.textContent = "View Add-Ons";
     });
   }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+  // ===== FLIP CARD FUNCTIONALITY (Tap-to-Flip on Mobile) =====
   const flipCards = document.querySelectorAll(".flip-card");
 
   flipCards.forEach(card => {
