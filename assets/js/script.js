@@ -46,12 +46,22 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ===== FLIP CARD FUNCTIONALITY (Tap-to-Flip on Mobile) =====
-  const flipCards = document.querySelectorAll(".flip-card");
+   const flipCards = document.querySelectorAll(".flip-card");
 
-  flipCards.forEach(card => {
-    card.addEventListener("click", function () {
-      // Toggle a class that triggers the flip on touch/click
-      this.querySelector(".flip-inner").classList.toggle("flipped");
-    });
-  });
+  let index = 0;
+
+  setInterval(() => {
+    // Flip the current card
+    const currentCard = flipCards[index];
+    const inner = currentCard.querySelector(".flip-inner");
+    inner.classList.add("flipped");
+
+    // Flip back after 2.5 seconds
+    setTimeout(() => {
+      inner.classList.remove("flipped");
+    }, 2500);
+
+    // Move to next card (loop back if at end)
+    index = (index + 1) % flipCards.length;
+  }, 4000); // Every 4 seconds, flip a new one
 });
