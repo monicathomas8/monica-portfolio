@@ -87,3 +87,22 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
+// === IMAGE FADE-IN + GROW ===
+const growImages = document.querySelectorAll('.fade-in-grow');
+
+const growObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    } else {
+      entry.target.classList.remove('visible');
+    }
+  });
+}, {
+  threshold: 0.2,
+  rootMargin: '0px 0px -50px 0px'
+});
+
+growImages.forEach(img => {
+  growObserver.observe(img);
+});
