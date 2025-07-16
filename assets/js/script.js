@@ -65,3 +65,25 @@ document.addEventListener("DOMContentLoaded", function () {
     index = (index + 1) % flipCards.length;
   }, 4000); // Every 4 seconds, flip a new one
 });
+
+// ===== FADE-IN EFFECT ON SCROLL =====
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+  threshold: 0.2, // Trigger when 20% of the element is visible
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+

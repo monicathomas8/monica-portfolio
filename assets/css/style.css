@@ -199,6 +199,32 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 
+/* fade ins */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-left {
+  transform: translateX(-50px);
+}
+
+.fade-in-right {
+  transform: translateX(50px);
+}
+
+.fade-in-up {
+  transform: translateY(30px);
+}
+
+/* Visible state triggers animation */
+.visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+
+
 /* Responsive Design */
 /* Flip when hovered on desktop */
 .flip-card:hover .flip-inner {
